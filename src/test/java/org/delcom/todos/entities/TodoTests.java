@@ -1,5 +1,4 @@
-
-package org.delcom.app.entities;
+package org.delcom.todos.entities;
 
 import java.util.UUID;
 

@@ -1,10 +1,10 @@
-package org.delcom.app.services;
+package org.delcom.todos.services;
 
 import java.util.List;
 import java.util.UUID;
 
-import org.delcom.app.entities.Todo;
-import org.delcom.app.repositories.TodoRepository;
+import org.delcom.todos.entities.Todo;
+import org.delcom.todos.repositories.TodoRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

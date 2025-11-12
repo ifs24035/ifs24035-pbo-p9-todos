@@ -1,9 +1,9 @@
-package org.delcom.app.repositories;
+package org.delcom.todos.repositories;
 
 import java.util.List;
 import java.util.UUID;
 
-import org.delcom.app.entities.Todo;
+import org.delcom.todos.entities.Todo;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;

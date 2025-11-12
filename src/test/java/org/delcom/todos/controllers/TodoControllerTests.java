@@ -1,4 +1,4 @@
-package org.delcom.app.controllers;
+package org.delcom.todos.controllers;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
@@ -7,9 +7,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 
-import org.delcom.app.configs.ApiResponse;
-import org.delcom.app.entities.Todo;
-import org.delcom.app.services.TodoService;
+import org.delcom.todos.configs.ApiResponse;
+import org.delcom.todos.entities.Todo;
+import org.delcom.todos.services.TodoService;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
