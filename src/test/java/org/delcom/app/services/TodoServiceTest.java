@@ -1,4 +1,4 @@
-package org.delcom.todos.services;
+package org.delcom.app.services;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.doNothing;
@@ -6,8 +6,9 @@ import static org.mockito.Mockito.when;
 
 import java.util.UUID;
 
-import org.delcom.todos.entities.Todo;
-import org.delcom.todos.repositories.TodoRepository;
+import org.delcom.app.entities.Todo;
+import org.delcom.app.repositories.TodoRepository;
+import org.delcom.app.services.TodoServiceTest;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;

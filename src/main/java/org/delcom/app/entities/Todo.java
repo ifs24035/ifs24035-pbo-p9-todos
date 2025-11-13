@@ -1,4 +1,4 @@
-package org.delcom.todos.entities;
+package org.delcom.app.entities;
 
 import jakarta.persistence.*;
 

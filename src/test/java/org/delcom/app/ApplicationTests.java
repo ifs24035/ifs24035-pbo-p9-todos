@@ -1,4 +1,4 @@
-package org.delcom.todos;
+package org.delcom.app;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.SpringApplication;
@@ -7,7 +7,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
-class ApplicationTest {
+class ApplicationTests {
 
 	@Test
 	void mainMethod_ShouldRunSpringApplication() throws Exception {
@@ -30,7 +30,7 @@ class ApplicationTest {
 		// Test bahwa Spring context bisa dimuat
 		assertDoesNotThrow(() -> {
 			// Test basic class loading
-			Class<?> clazz = Class.forName("org.delcom.todos.Application");
+			Class<?> clazz = Class.forName("org.delcom.app.Application");
 			assertNotNull(clazz);
 		});
 	}

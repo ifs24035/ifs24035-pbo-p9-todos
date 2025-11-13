@@ -1,7 +1,8 @@
-package org.delcom.todos.entities;
+package org.delcom.app.entities;
 
 import java.util.UUID;
 
+import org.delcom.app.entities.TodoTests;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
