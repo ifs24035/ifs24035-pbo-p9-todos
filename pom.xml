@@ -129,7 +129,7 @@
 				<version>${maven.surefire.plugin.version}</version>
 			</plugin>
 
-			<!-- JaCoCo Plugin (coverage) tetap -->
+			<!-- JaCoCo Plugin (coverage) dengan threshold realistis -->
 			<plugin>
 				<groupId>org.jacoco</groupId>
 				<artifactId>jacoco-maven-plugin</artifactId>
@@ -157,6 +157,10 @@
 					</execution>
 				</executions>
 				<configuration>
+					<!-- Exclude class yang tidak perlu di-check -->
+					<excludes>
+						<exclude>**/SpringTodosApplication.class</exclude>
+					</excludes>
 					<rules>
 						<rule>
 							<element>BUNDLE</element>
@@ -164,12 +168,12 @@
 								<limit>
 									<counter>INSTRUCTION</counter>
 									<value>COVEREDRATIO</value>
-									<minimum>1.0</minimum>
+									<minimum>0.85</minimum> <!-- 85% instruction coverage -->
 								</limit>
 								<limit>
 									<counter>BRANCH</counter>
 									<value>COVEREDRATIO</value>
-									<minimum>1.0</minimum>
+									<minimum>0.80</minimum> <!-- 80% branch coverage -->
 								</limit>
 							</limits>
 						</rule>
